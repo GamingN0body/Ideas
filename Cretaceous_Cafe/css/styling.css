@@ -1,0 +1,1322 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+@import url(https://fonts.googleapis.com/css2?family=Iceland&display=swap);
+
+@import url(https://fonts.googleapis.com/css2?family=Bree+Serif&family=Iceland&display=swap);
+
+@import url('https://fonts.googleapis.com/css2?family=Emblema+One&family=Gothic+A1&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass+Mono&family=Oxanium&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0%;
+}
+
+main {
+    background-image: #FAFCF2;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+[role="menu"] {
+    background-attachment: fixed;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0%;
+    font-family: 'Irish Grover';
+    color: rgb(250, 252, 242);
+}
+
+p {
+    font-family: 'Bree Serif', serif;
+    color: rgb(250, 252, 242);
+}
+
+img {
+    max-width: 100%;
+    width: 30%;
+    margin: 1%;
+    border-radius: 2em;
+}
+
+.featured_title {
+    background: rgb(190, 157, 77);
+    padding: 0rem;
+}
+
+[role="banner"] {
+    text-align: center;
+    font-size: 5rem;
+    color: rgb(250, 252, 242);
+    padding: 1.2rem;
+    background: rgb(49, 110, 53);
+    border-radius: 15px;
+    margin: 0.5%;  /*change this for reservations white space, originally 4*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+[role="textbox"] {
+    color: rgb(250, 252, 242);
+    font-size: 2rem;
+}
+
+[role="doc-subtitle"] {
+    text-align: center;
+    font-size: 3rem;
+}
+
+[role="row"] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#text_title {
+    font-size: 4rem;
+    text-align: center;
+}
+
+#text_link:link,
+#text_link:visited {
+    color: rgb(250, 252, 242);
+}
+
+/*nav*/
+nav {
+    background-color: rgb(49, 110, 53);
+}
+
+.header {
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0rem;
+}
+
+.headerItem {
+    display: inline-block;
+    position: relative;
+}
+
+.headerItem::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom center;
+    transition: transform 0.25s ease-out;
+    border-radius: 50px;
+}
+
+.headerItem:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom center;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+
+a:visited {
+    text-decoration: none;
+}
+
+
+a:hover {
+    text-decoration: none;
+}
+
+
+a:active {
+    text-decoration: none;
+}
+
+a {
+    color: white;
+}
+
+.pages_top {
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0rem;
+}
+
+.pages_link_top {
+    display: inline-block;
+    position: relative;
+}
+
+.pages_link_top::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom center;
+    transition: transform 0.25s ease-out;
+    border-radius: 50px;
+}
+
+.pages_link_top:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom center;
+}
+/*nav end*/
+
+/*Homepage*/
+.home_page_title {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background-image: url(/Cretaceous_Cafe/Images/home/home_steak.jpg);
+    background-size: cover;
+    background-position-y: center;
+    background-position-x: center;
+    height: 50rem;
+}
+
+.customer_favorite {
+    background: rgb(190, 157, 77);
+    border-radius: 15px;
+    text-align: center;
+    font-size: 4rem;
+}
+
+.featured_hp {
+    max-width: 30%;
+    padding: 1%;
+    margin: rem;
+    background: rgb(190, 157, 77);
+    border-radius: 15px;
+    font-size: 2rem;
+}
+
+#featured_text {
+    padding: 1%;
+    background: rgb(63.1%, 64.7%, 55.33%);
+    color: rgb(71, 53, 44);
+    border-radius: 15px;
+}
+
+#featured_img {
+    width: 100%;
+}
+
+.order_hp {
+    padding: 1%;
+    margin: 1%;
+    background: rgb(49, 110, 53);
+    border-radius: 15px;
+    font-size: 3rem;
+    width: 50%;
+}
+
+.order_hp {
+    height: fit-content;
+}
+
+#order_title_hp {
+    color: rgb(250, 252, 242);
+    font-size: 4rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#order_text_hp {
+    font-size: 3rem;
+    padding: 1%;
+    font-size: 2rem;
+    background: rgb(31, 108, 61);
+    color: rgb(250, 252, 242);
+    border-radius: 15px;
+}
+
+#button {
+    padding: 1%;
+    font-size: 3rem;
+    background: rgb(190, 157, 77);
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*we need to figure out how to contain the background around the image, no extra room.*/
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reviews_hp {
+    padding: 1%;
+    background: rgb(49, 110, 53);
+    border-radius: 15px;
+}
+
+.reviews_title_hp {
+    background: rgb(190, 157, 77);
+    border-radius: 15px;
+    font-size: 4rem;
+}
+
+#review_paragraph {
+    font-size: 3rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#people_img {
+    margin: 2%;
+}
+
+.row_items_menu {
+    height: 37rem;
+}
+
+/*homepage end*/
+
+/*about page*/
+.about_page_title {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background-image: url(/Cretaceous_Cafe/Images/about/volcano.jpg);
+    background-size: cover;
+    background-position-y: center;
+    background-position-x: center;
+    height: 50rem;
+}
+
+#title_text {
+    font-size: 5rem;
+    color: rgb(250, 252, 242);
+    padding: 1%;
+    background: rgb(63.1%, 64.7%, 55.33%);
+    border-radius: 15px;
+    margin: 2%;
+}
+
+.about {
+    padding: 1%;
+    background: rgb(31, 108, 61);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: row;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.achievements_title,
+.achievements_paragraph {
+    font-size: 1.5rem;
+    margin: 1%;
+}
+
+#row_ad {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.achievenments {
+    background: rgb(161, 165, 141);
+    border-radius: 15px;
+    margin: 2%;
+    padding: 1%;
+}
+
+#img_logo {
+    width: 55rem;
+    height: 15rem;
+}
+
+.employees_ {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-flow: row;
+}
+
+.employees_text {
+    margin: 2%;
+    padding: 1%;
+    background: rgb(31, 108, 61);
+    border-radius: 15px;
+    width: 35rem;
+    height: 35rem;
+}
+
+.employees_group {
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    flex-flow: column;
+}
+
+#employee_img {
+    width: 35rem;
+    height: 30rem;
+    display: flex;
+    justify-items: center;
+    align-self: center;
+    border-radius: 25%;
+}
+
+.employees_paragraph {
+    margin: 2%;
+    padding: 1%;
+    background: rgb(161, 165, 141);
+    border-radius: 15px;
+    width: 35rem;
+}
+
+/*about page end*/
+
+/*review page*/
+#review {
+    margin-top: 3%;
+    padding: 1%;
+    background: rgb(49, 110, 53);
+    border-radius: 15px
+}
+
+.review_title {
+    font-size: 6rem;
+    text-align: center;
+}
+
+.review_group {
+    display: flex;
+}
+
+#review_text {
+    font-size: 4rem;
+    margin: 1%;
+    background: rgb(49, 110, 53);
+    border-radius: 15px;
+}
+
+#review_image {
+    max-width: 20%;
+    width: 100%;
+    padding: 1%;
+}
+
+/*review page end*/
+
+/*careers*/
+.careers_page_title {
+    background-image: url(/Cretaceous_Cafe/Images/backgorund/logo_vine.jpg);
+    background-size: cover;
+    background-position-y: center;
+    background-position-x: center;
+    height: 50rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#title_text {
+    font-size: 7rem;
+}
+
+#sub_title_text {
+    font-size: 4rem;
+}
+
+.careers {
+    display: flex;
+}
+
+#careers_paragraph {
+    font-size: 3rem;
+    padding: 1%;
+    background: rgb(49, 110, 53);
+    border-radius: 15px;
+    margin: 0%;
+}
+
+#careers_img {
+    width: 25rem;
+    margin: 1%;
+}
+
+/*careers end*/
+
+/*menu*/
+[role="rowheader"] {
+    text-align: center;
+    font-size: 4rem;
+    background: rgb(31, 108, 61);
+}
+
+.menu_page_title {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background-image: url("/Cretaceous_Cafe/Images/menu/banner\ menu.jpg");
+    background-size: cover;
+    background-position-y: center;
+    background-position-x: center;
+    height: 50rem;
+}
+
+.menu_page {
+    text-align: center;
+    font-size: 5rem;
+    color: rgb(250, 252, 242);
+    padding: 3%;
+    background: rgb(49, 110, 53);
+    border-radius: 15px;
+    margin: 4%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu_item_bottom {
+    display: flex;
+    align-items: flex-end;
+}
+
+.product {
+    border-radius: 15px;
+    background-color: rgb(49, 110, 53);
+    padding: 0.5rem;
+    transition: box-shadow 500ms ease;
+    height: 34rem;
+    width: 35%;
+    margin: 3%;
+}
+
+.product:hover,
+.cartItem:hover {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.menuImage {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+}
+
+.menuPrice::before {
+    content: "";
+    width: 2em;
+    height: 2em;
+    background-image: url("/Cretaceous_Cafe/Images/JurassicPAY\ Logo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    transform: translateY(0.6em);
+}
+
+.J-pay {
+    display: flex;
+    flex-flow: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    scale: 40%;
+}
+
+.menuPrice {
+    display: inline-block;
+    margin-top: 0.5em;
+    color: rgb(250, 252, 242);
+}
+
+.prodBtn,
+.removeBtn,
+#emptyCart {
+    display: block;
+    float: right;
+    background-color: dodgerblue;
+    color: white;
+    padding: 1em;
+    text-decoration: none;
+    border-radius: 0.5em;
+    transition: background-color 500ms ease;
+}
+
+.prodBtn:hover {
+    background-color: black;
+    color: yellow;
+}
+
+.removeBtn,
+#emptyCart {
+    background-color: black;
+}
+
+.removeBtn:hover,
+#emptyCart:hover {
+    background-color: red;
+}
+
+#emptyCart {
+    margin-top: 0.5em;
+}
+
+#cart {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: -ms-inline-grid;
+    grid-auto-rows: 25vh;
+    gap: 1em;
+    margin-bottom: 2rem;
+}
+
+.cartItem {
+    margin: 1%;
+    padding: 0.5rem;
+    transition: box-shadow 500ms ease;
+    display: flex;
+    gap: 1em;
+    position: relative;
+    background-color: rgb(49, 110, 53);
+}
+
+.cartItem img {
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+    flex-shrink: 1;
+}
+
+.cartItem .cartItemInfo {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cartItem .cartItemPricing {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cartTotal {
+    text-align: right;
+}
+
+nav>a {
+    background-color: dodgerblue;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    color: white;
+    text-decoration: none;
+    transition-property: color, background-color;
+    transition-duration: 500ms;
+    transition-timing-function: ease;
+    margin-left: 1rem;
+}
+
+nav>a:hover {
+    color: yellow;
+    background-color: rgb(26, 118, 209);
+}
+
+#cartItemCount::before {
+    content: " (";
+}
+
+#cartItemCount::after {
+    content: ")";
+}
+
+/*menu end*/
+
+/*cart*/
+.title {
+    display: flex;
+    font-size: x-large;
+    align-items: center;
+    justify-content: center;
+    height: 10rem;
+    font-size: 5rem;
+    color: rgb(250, 252, 242);
+    background: rgb(31, 108, 61);
+    border-radius: 15px;
+}
+
+.order {
+    display: flex;
+    flex-direction: column;
+    flex-flow: column;
+    font-size: x-large;
+    margin: 2%;
+    background: rgb(31, 108, 61);
+    border-radius: 15px;
+    width: 100%;
+    transform: translateX(13rem); 
+    margin-top: 40px;
+}
+
+.order_title {
+    background-color: #BE9D4D;
+}
+
+.order_icon {
+    width: 100%;
+    height: auto;
+}
+
+.order_title {
+    background-color: rgb(49, 110, 53);
+}
+
+.pick_up {
+    background-color: #BE9D4D;
+    margin: 2rem;
+}
+
+.dine {
+    background-color: #BE9D4D;
+    margin: 2rem;
+}
+
+/*cart end*/
+
+/*reservation*/
+.title {
+    display: flex;
+    font-size: xx-large;
+    align-items: center;
+    justify-content: center;
+    height: 10rem;
+    font-size: 5rem;
+    color: rgb(250, 252, 242);
+    padding: 1%;
+    background: rgb(49, 110, 53);
+    border-radius: 15px;
+    margin: 0%;
+}
+
+#week_day {
+    border-bottom: solid;
+    border-color: black;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    flex-flow: column;
+    font-size: large;
+    margin: 2%;
+    background: rgb(49, 110, 53);
+    border-radius: 15px;
+    width: 50rem;
+    height: 50%;
+}
+
+.business_logo {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row;
+    font-size: xx-large;
+    border-width: 10px;
+}
+
+#logo_img {
+    width: 15rem;
+}
+
+#smaller_text {
+    margin: 0%;
+    font-size: 3rem;
+}
+
+.hours {
+    text-align: center;
+    font-size: larger;
+}
+
+#menu_item_paragraph_r {
+    font-size: large;
+}
+
+#cart_r {
+    width: 25%;
+}
+
+.reservations_here {
+    display: flex;
+    flex-direction: column;
+    flex-flow: column;
+    margin: 1%;
+    font-size: x-large;
+    background: rgb(49, 110, 53);
+    border-radius: 15px;
+    width: 50%;
+}
+
+.icons span:last-child {
+    margin-right: -10px;
+}
+
+.icons span:hover {
+    background: #F70003;
+}
+
+.calendar ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    text-align: center;
+}
+
+.calendar li {
+    color: #D9DECC;
+    width: 13%;
+    font-size: 1.07rem;
+}
+
+.calendar .days li {
+    z-index: 1;
+    cursor: pointer;
+    position: relative;
+    margin-top: 0.4rem;
+}
+
+.days li.inactive {
+    color: rgb(113, 118, 104);
+}
+
+.days li.active {
+    color: rgb(250, 252, 242);
+}
+
+.days li::before {
+    position: absolute;
+    content: "";
+    left: 50%;
+    top: 50%;
+    height: 2rem;
+    width: 2rem;
+    z-index: -1;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.days li:not(.active):hover::before {
+    background: #F70003;
+}
+
+.times {
+    background: rgb(190, 157, 77);
+    border-radius: 15px;
+    color: rgb(250, 252, 242);
+    text-align: center;
+    padding: 1%;
+    margin: 1.6%;
+    width: auto;
+    text-align: center;
+}
+
+#time_text {
+    margin: 1%;
+}
+
+.reservation_icon {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row;
+}
+
+button {
+    background-color: #04AA6D;
+    border-radius: 15pt;
+}
+
+button:active {
+    background-color: #04AA6D;
+}
+
+#reservation_icon_text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-25px);
+}
+
+#reservation_icon_img {
+    width: 20rem;
+}
+
+.button {
+    background: rgb(190, 157, 77);
+    border-radius: 15px;
+    color: rgb(250, 252, 242);
+    text-align: center;
+}
+
+/*checkout*/
+.title {
+    display: flex;
+    font-size: x-large;
+    align-items: center;
+    justify-content: center;
+    height: 10rem;
+    font-size: 5rem;
+    color: rgb(250, 252, 242);
+    background: rgb(31, 108, 61);
+    border-radius: 15px;
+}
+
+.link_co {
+    color: rgb(250, 252, 242);
+}
+
+.row_co {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0 -16px;
+}
+
+.container_co_25 {
+    -ms-flex: 25%;
+    flex: 25%;
+}
+
+.content_head_co {
+    -ms-flex: 50%;
+    flex: 50%;
+}
+
+.container_co_75 {
+    -ms-flex: 75%;
+    flex: 75%;
+}
+
+.container_co_25,
+.content_head_co,
+.container_co_75 {
+    padding: 0 16px;
+}
+
+.container {
+    color: rgb(250, 252, 242);
+    margin: 1%;
+    background-color: rgb(31, 108, 61);
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightgrey;
+    border-radius: 15px;
+}
+
+input[type=text] {
+    color: rgb(250, 252, 242);
+    width: 94%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+}
+
+.price {
+    color: rgb(250, 252, 242)
+}
+
+label {
+    margin-bottom: 10px;
+    display: block;
+}
+
+.icon-container {
+    margin-bottom: 20px;
+    padding: 7px 0;
+    font-size: 24px;
+}
+
+.bill_input {
+    background-color: #04AA6D;
+    color: rgb(250, 252, 242);
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.bill_input:hover {
+    background-color: #45a049;
+}
+
+span.price {
+    float: right;
+    color: rgb(250, 252, 242);
+}
+
+.cart_title {
+    background-color: #45a049;
+    font-size: 3rem;
+    margin: 0%;
+    padding: 1%;
+    border-radius: 15px;
+    text-align: center;
+}
+
+/*checkout end*/
+
+/*extra*/
+#menu_item_img {
+    max-width: 100%;
+    width: 100%;
+}
+
+#menu_item_title {
+    font-size: 2rem;
+}
+
+#menu_item_paragraph {
+    font-size: 1rem;
+}
+
+/*extra end*/
+
+footer {
+    color: rgb(31, 108, 61);
+    margin: 0%;
+    background-color: rgb(31, 108, 61);
+    padding: 5px 20px 15px 20px;
+    border: 1px solid;
+}
+
+.bottom_nav {
+    display: flex;
+    flex-direction: row;
+}
+
+.pages {
+    margin: 0%;
+    padding: 0%;
+    font-size: 2rem;
+    text-align: left;
+}
+
+#pages_link {
+    color: rgb(250, 252, 242);
+    margin: 1%;
+    font-size: 30px;
+}
+
+#fake_icon {
+    width: fit-content;
+    transform: translateX(260px);
+}
+
+#our_icon {
+    width: 24rem;
+    transform: translateX(120px);
+}
+
+
+
+@media only screen and (max-width: 740px) {
+    h1 {
+        font-size: 4rem;
+    }
+
+    #fake_icon, #our_icon {
+        width: 0%;
+    }
+
+    h2 {
+        width: 100%;
+    }
+
+/*Nav*/
+.headerItem {
+    display: inline-block;
+    position: relative;
+    font-size: xx-small;
+}
+
+.pages_top {
+    display: flex;
+    position: relative;
+    font-size: smaller;
+    padding: 3px;
+}
+
+.pages_link_top {
+    padding: 3px;
+    }
+/*Nav End*/
+
+    #products {
+        grid-template-columns: 1fr;
+        padding: 1em;
+    }
+
+    #text_title {
+        display: flex;
+        font-size: 2rem;
+    }
+
+    .home_page_title {
+        height: 30rem;
+    }
+
+    #order_hp_column {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .order_hp {
+        font-size: 1rem;
+        display: flex;
+        flex-flow: column nowrap;
+        width: 100%;
+        height: auto;
+    }
+
+    .button {
+        font-size: 2rem;
+    }
+
+    .row_items_menu {
+        display: flex;
+        flex-flow: column wrap;
+        height: auto;
+    }
+
+    #order_title_hp {
+        font-size: 3rem;
+    }
+
+    #review_paragraph {
+        font-size: 2rem;
+    }
+
+    .people_img_1, .people_img_3 {
+        width: 45%;
+    }
+
+
+    .people_img_2 {
+        width: 0%;
+    }
+
+    #order_text_hp {
+        font-size: 2rem;
+    }
+
+    .reviews_hp {
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    /*About the Business*/
+    .about {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #img_logo {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        height: 10rem;
+        width: 0%;
+    }
+
+    .business_logo {
+        height: auto;
+    }
+
+    [role="textbox"] {
+        display: flex;
+        align-items: stretch;
+        height: auto;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .employees_text {
+        width: auto;
+        height: auto;
+    }
+
+    #employee_img {
+        height: auto;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .achievements_paragraph {
+        font-size: 1.5rem;
+    }
+
+    .achievements_mobile {
+        display: flex;
+    }
+
+    .employees_ {
+        flex-wrap: wrap;
+    }
+
+    .careers {
+        flex-wrap: wrap;
+    }
+
+    #careers_paragraph {
+        font-size: 2rem;
+    }
+
+    #careers_img {
+        width: 0%;
+    }
+
+    .products {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .product {
+        width: 100%;
+        height: 26rem;
+    }
+
+    .row_items_menu {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    /*Review*/
+    #review_image {
+        width: 0%;
+    }
+
+    #review_text {
+        font-size: larger;
+    }
+
+    #review {
+        width: 18rem;
+    }
+
+    /*Revervations*/
+    .left {
+        width: 100%;
+    }
+
+    .business_logo {
+        height: auto;
+    }
+
+    #logo_img {
+        width: 0%;
+    }
+
+    #text_title {
+        font-size: 2rem;
+        width: 100%;
+    }
+
+    #smaller_text {
+        font-size: 2rem;
+    }
+
+    .reservations_here {
+        width: fit-content;
+    }
+
+    .reservation_icon {
+        flex-direction: column;
+    }
+
+    .headerItem {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding-right: 10px;
+    }
+
+    /*Cart*/
+
+    #cart {
+        max-width: 1280px;
+        margin: 0 auto;
+        display: grid;
+        grid-auto-rows: 25vh;
+        gap: 1em;
+        margin-bottom: 2rem;
+    }
+
+    .cartItem {
+        display: flex;
+        gap: 1em;
+        height: 12rem;
+        margin-bottom: 10rem;
+        padding: 0.5rem;
+        position: relative;
+    }
+
+    .cartItemInfo {
+        font-size: 12px;
+    }
+
+    .cartItemPricing {
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .order {
+        transform: translateX(0);
+    }
+
+    .pick_up {
+        width: 10%;
+    }
+
+    /*Footer*/
+
+    #pages_link {
+        font-size: xx-large;
+    }
+}
